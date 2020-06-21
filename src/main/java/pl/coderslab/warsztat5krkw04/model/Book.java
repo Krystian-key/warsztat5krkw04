@@ -53,4 +53,13 @@ public class Book {
     public void setType(String type) {
         this.type = type;
     }
+    
+    public void merge(Book book){
+        this.id =book.id;
+        this.isbn =book.isbn;
+        this.title =book.title;
+        this.author =book.author;
+        this.publisher =book.publisher;
+        this.type =book.type;
+    }
 }
